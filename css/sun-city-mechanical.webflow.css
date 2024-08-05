@@ -12,6 +12,25 @@
   --black-2: black;
 }
 
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
 body {
   background-color: var(--color);
   color: #333;
@@ -211,7 +230,6 @@ blockquote {
 .button:hover {
   background-color: var(--red-hover);
   color: var(--color);
-  transition: all .2s cubic-bezier(.785, .135, .15, .86);
 }
 
 .button.blue {
